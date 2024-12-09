@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status side</title>
+    <style>
+        body {
+            background-image: url('Background.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+        }
+    </style>
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/icons/favicon-48x48.png">
+
+    <img id="image1" src="" loading="lazy" alt="Image 1" style="display: none;">
+    <img id="image2" src="" loading="lazy" alt="Image 2" style="display: none;">
+    <img id="image3" src="" loading="lazy" alt="Image 3" style="display: none;">
+    <img id="image4" src="" loading="lazy" alt="Image 4" style="display: none;">
+    <img id="image5" src="" loading="lazy" alt="Image 5" style="display: none;">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="client.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top_boxes" id="dateTimeBox">
+            <div id="dateTime">
+                <h2 id="dateTimeDisplay"></h2>
+            </div>
+        </div>
+        
+        <div class="top_boxes" id="weatherBox">
+            <div id="weatherData"></div>
+            <div id="lastUpdated"></div>
+        </div>
+
+        <div class="bottom_boxes" id="contentBox">
+            <div class="headerContainer">
+                <h2>Informasjon:</h2>
+                <div id="currentContentHeader"></div>
+                <select id="dropdownmenu">
+                    <option value="option1"></option>
+                    <option value="option2">Vaktliste Elektro</option>
+                    <option value="option3">Vaktliste Renovasjon</option>
+                    <option value="option4">Vaktliste Bygg</option>
+                    <option value="option5">Telefon Vaktliste 1</option>
+                    <option value="option6">Telefon Vaktliste 2</option>
+                </select>
+            </div>
+            <div id="cycledContentContainer"></div>
+            <div id="lastUpdate"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
