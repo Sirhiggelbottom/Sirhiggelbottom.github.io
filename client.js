@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var hostName;
         var contentTimeout;
 
-        const url = `${window.location.protocol}//${window.location.hostname}:3000/get-connection`;
+        const url = `https://f1eb-81-166-218-138.ngrok-free.app/get-connection`;
 
         fetch(url)
             .then(response => response.text())
